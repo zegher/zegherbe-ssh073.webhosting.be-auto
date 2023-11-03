@@ -1,0 +1,199 @@
+body::-webkit-scrollbar-thumb {
+    background-color: #1400FF;
+}
+body{
+    margin    : 0 0 0 0;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}
+.top{
+    
+    height          : 800px;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.247)),
+    url(../images/JPG/Asset\ 3-100.jpg);
+    background-position: 0%;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    margin-top         : -200px;
+    z-index            : 2;
+}
+.top div{
+    height: 200px;
+}
+#sub{
+    margin-top: -200px;
+}
+#top-title{
+    margin-left: 5%;
+    display    : flex;
+}
+
+.name-title{
+    margin-top     : 200px;
+    margin-right   : 60%;
+    display        : flex;
+    justify-content: right;
+}
+
+.top p{
+    background-color: #1400FF;
+    color           : whitesmoke;
+    padding         : 10px;
+    font-size       : 30pt;
+    font-family     : 'Coolvetica Regular';
+}
+
+#top-subtitle{
+    margin-top : -20px;
+    margin-left: 30%;
+
+    display         : flex;
+    background-color: white;
+    color           : #1400FF;
+    font-size       : 15pt;
+}
+
+.middle{
+    background-color: white;
+    height          : 1000px;
+    z-index         : 3;
+    margin-bottom: -200px;
+}
+
+.middle p{
+    margin-left    : 5%;
+    margin-right   : 5%;
+    display        : flex;
+    justify-content: left;
+
+    font-size  : 25pt;
+    font-family: 'Coolvetica Regular';
+}
+
+.left-column{
+    margin-left: 5%;
+        /* margin-top: 50px; */
+    font-family: "PT Mono";
+}
+
+.left-column p{
+    font-size  : 15pt;
+    font-family: 'PT Mono';
+    display    : flex;
+    margin-left: -0.1%;
+}
+
+.left-column img{
+    width        : 400px;
+    margin-bottom: 10px;
+}
+
+.two-columns{
+    display: flex;
+    gap    : 50px;
+}
+
+.right-column strong{
+    background-color: #1400FF;
+    color           : white;
+    padding         : 5px;
+}
+
+.right-column p:last-child{
+    font-family: "PT Mono";
+    font-size  : 15pt;
+}
+
+.right-column .contacter{
+    margin-top: 50px;
+
+    display       : flex;
+    flex-direction: column;
+
+    font-size  : 20px;
+    font-family: "PT Mono";
+}
+
+
+.contacter p{
+    font-size  : 20px;
+    font-family: "PT Mono";
+    margin-bottom: -5px;
+}
+
+.contacter p:last-child{
+    padding-bottom: 20px;
+}
+
+.contacter a{
+    color: black;
+    margin-top: 5px;
+}
+
+    /* screen smaller than 1160px width */
+@media only screen and (max-width: 1160px) {
+    body{
+        width : 100%;
+        height: 1550px;
+    }
+    .name-title{
+        margin-right   : 40%;
+        justify-content: right;
+    }
+    label{
+        font-size: smaller;
+    }
+    .abt-me{
+        font-size: smaller;
+    }
+    .abt-me div:last-child{
+        display: none;
+    }
+
+    .two-columns{
+        display: inline-block;
+    }
+
+    .left-column img{
+        width        : 90%;
+        margin-bottom: 50px;
+    }
+    .right-column p{
+        font-size: 18pt;
+    }
+    .right-column strong{
+        font-size: 8pt;
+    }
+    .contacter{
+        margin-top: 0px;
+    }
+    .contacter p{
+        font-size: smaller;
+    }
+    footer{
+        margin-top     : 100px;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+        gap            : 30px;
+        float          : bottom;
+        margin-top: 400px;
+    }
+    footer img{
+        width          : 30px;
+        height         : auto;
+        flex-direction : row;
+        padding        : 25px;
+        justify-content: center;
+        margin-top     : 15%;
+    }
+    footer div:last-child{
+        margin-top: 20px;
+    }
+
+
+}

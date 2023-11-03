@@ -1,0 +1,18 @@
+.hero { 
+    width: 25rem;
+}
+.top{
+  background-image: 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.482), rgba(0, 0, 0, 0.247)),
+  url(../images/brandbook/mokup.png);
+}
+.hero img{
+  border: 2px solid #1400FF;
+}
+@media only screen and (max-width: 1160px) {
+ 
+  .hero{
+    width: 15rem;
+  }
+
+}

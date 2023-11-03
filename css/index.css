@@ -1,0 +1,260 @@
+body::-webkit-scrollbar-thumb {
+    background-color: #1400FF;
+}
+body{
+    margin    : 0 0 0 0;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}
+header a{
+    color          : whitesmoke;
+    text-decoration: none;
+}
+a{
+    color          : white;
+    text-decoration: none;
+}
+a:hover{
+    color: #1400FF;
+}
+
+.top{
+    
+    height          : 800px;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.247)),
+    url(../images/JPG/Asset\ 3-100.jpg);
+    background-position: 0%;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    margin-top         : -200px;
+    z-index            : 2;
+}
+.top div{
+    height: 200px;
+}
+#sub{
+    margin-top: -200px;
+}
+#top-title{
+    margin-left: 5%;
+    display    : flex;
+}
+
+.name-title{
+    margin-top     : 200px;
+    margin-right   : 60%;
+    display        : flex;
+    justify-content: right;
+}
+
+.top p{
+    background-color: #1400FF;
+    color           : whitesmoke;
+    padding         : 10px;
+    font-size       : 30pt;
+    font-family     : 'Coolvetica Regular';
+}
+
+#top-subtitle{
+    margin-top : -20px;
+    margin-left: 30%;
+
+    display         : flex;
+    background-color: white;
+    color           : #1400FF;
+    font-size       : 15pt;
+}
+
+.middle{
+    background-repeat: repeat;
+    padding-top      : 1%;
+    padding-bottom   : 1%;
+}
+
+.title{
+      /* margin-top: 100px; */
+    margin-left    : 5%;
+    display        : flex;
+    justify-content: left;
+
+    background-color: #1400FF;
+    color           : white;
+    font-size       : 15pt;
+    width           : 99px;
+    font-family     : 'Coolvetica Regular';
+}
+
+.abt-me{
+    display      : flex;
+    gap          : 10px 20px;
+    column-gap   : 20px;
+    font-size    : 25pt;
+    font-family  : 'Coolvetica';
+    margin-left  : 10%;
+    margin-right : 5%;
+    margin-top   : 50px;
+    margin-bottom: 70px;
+}
+
+.blue{
+    rotate: 3deg;
+    width : 100%;
+}
+
+.home-contact{
+    background-color: #1400FF;
+    margin-left     : -20px;
+    margin-right    : -20px;
+    rotate          : 3deg;
+    color           : white;
+    font-size       : 10pt;
+    padding-top     : 1px;
+    padding-bottom  : 1px;
+}
+
+.home-contact .title{
+    background-color: white;
+    color: #1400FF;
+}
+
+.home-contact p{
+    rotate       : -3deg;
+    margin-left  : 5%;
+    margin-right : 5%;
+    margin-top   : 50px;
+    margin-bottom: 50px;
+}
+
+#blue-filling{
+    background-color: #1400FF;
+    width           : 100%;
+    height          : 150px;
+    margin-top      : -60px
+}
+
+.contact-form{
+    margin-left  : 5%;
+    margin-right : 5%;
+    margin-top   : 50px;
+    margin-bottom: 50px;
+    font-family  : 'PT Mono';
+    rotate       : -3deg;
+
+    display        : flex;
+    justify-content: center;
+
+}
+
+.contact-form div{
+    padding: 5px;
+}
+.c-first{
+      /* make two colums with flexbox */
+    display       : flex;
+    flex-direction: row;
+    font-size: 10pt;
+    gap           : 10px 20px;
+}
+.c-second{
+      /* make two colums with flexbox */
+    display       : flex;
+    flex-direction: row;
+    gap           : 10px 20px;
+}
+
+textarea{
+    width        : 1145px;
+    border       : 2px solid #1400FF;
+    border-radius: 5px;
+    margin-left  : 5px;
+}
+
+input{
+    height       : 30px;
+    width        : 450px;
+    border       : 1px solid #1400FF;
+    margin-left  : 20px;
+    border-radius: 5px;
+}
+#mssg{
+    margin-left: 5px;
+}
+#submit{
+    width       : 180px;
+    color       : #1400FF;
+    padding-left: -15pt;
+    
+    height     : 50px;
+    font-size  : 15pt;
+    font-family: 'Coolvetica Regular';
+}
+
+#submit:hover{
+    color           : white;
+    background-color: #1400FF;
+}
+
+  /* screen smaller than 1160px width */
+@media only screen and (max-width: 1160px) {
+    body{
+        width: 100%;
+    }
+    header{
+        font-size: 12.5pt;
+    }
+    .name-title{
+        margin-right   : 40%;
+        justify-content: right;
+    }
+    label{
+        font-size: smaller;
+    }
+    .abt-me{
+        font-size: 20pt;
+    }
+    .contact-form{
+       flex-direction: column;
+    }
+    .c-first{
+        flex-direction: column;
+    }
+    .c-second{
+        flex-direction: column;
+    }
+    textarea{
+        width        : 95%;
+        border-radius: 0px;
+    }
+    input{
+        width        : 97.5%;
+        height       : 20px;
+        border-radius: 0px;
+        margin-left  : -0.1px;
+    }
+    #submit{
+        width      : 97.5%;
+        margin-left: 5px;
+    }
+    footer{
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+          /* center this div */
+        align-items: center;
+        gap        : 30px;
+    }
+    footer img{
+        width          : 30px;
+        height         : auto;
+        flex-direction : row;
+        padding        : 25px;
+        justify-content: center;
+        margin-top     : 15%;
+    }
+    footer div:last-child{
+        margin-top: 20px;
+    }
+}

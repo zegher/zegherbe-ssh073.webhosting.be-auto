@@ -1,0 +1,217 @@
+body::-webkit-scrollbar-thumb {
+    background-color: #1400FF;
+}
+body{
+    margin    : 0 0 0 0;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}
+header a{
+    color          : whitesmoke;
+    text-decoration: none;
+}
+a:hover{
+    color: #1400FF;
+}
+.top{
+    
+    height          : 800px;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.247)),
+    url(../images/JPG/Asset\ 3-100.jpg);
+    background-position: 0%;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    margin-top         : -200px;
+    z-index            : 2;
+}
+.top div{
+    height: 200px;
+}
+#sub{
+    margin-top: -200px;
+}
+#top-title{
+    margin-left: 5%;
+    display    : flex;
+}
+
+.middle{
+    margin: 5%;
+}
+
+.middle-p{
+    display        : flex;
+    justify-content: left;
+
+    font-size  : 30pt;
+    font-family: 'Coolvetica Regular';
+}
+
+.name-title{
+    margin-top     : 200px;
+    margin-right   : 60%;
+    display        : flex;
+    justify-content: right;
+}
+
+.top p{
+    background-color: #1400FF;
+    color           : whitesmoke;
+    padding         : 10px;
+    font-size       : 30pt;
+    font-family     : 'Coolvetica Regular';
+}
+
+#top-subtitle{
+    margin-top : -20px;
+    margin-left: 30%;
+
+    display         : flex;
+    background-color: white;
+    color           : #1400FF;
+    font-size       : 15pt;
+}
+
+.project-tile{
+    padding: 0 2% 0% 0%;
+    margin-bottom: 5%;
+    /* scale        : 110%; */
+}
+
+
+.project-image{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)),
+    url('../images/jobbyprev.png');
+    background-size   : cover;
+    width : 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+.project-image p{
+    color       : white;
+    padding-left: 15px;
+    font-family : "PT Mono";
+}
+
+.project-image p:first-child{
+    font-size  : 25px;
+    font-family: 'Coolvetica Regular';
+    padding-top: 170px;
+}
+
+.project-image2{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)),
+    url('../images/zghrbrandbook.png');
+    background-size   : cover;
+    width : 300px;
+    height: 300px;
+
+    background-repeat: no-repeat;
+}
+
+.project-image2 p{
+    color       : white;
+    padding-left: 15px;
+    font-family : "PT Mono";
+}
+
+.project-image2 p:first-child{
+    font-size  : 25px;
+    font-family: 'Coolvetica Regular';
+    padding-top: 170px;
+}
+
+.project-image3{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)),
+    url('../images/mvpsot.png');
+    background-size   : cover;
+    width              : 300px;
+    height             : 300px;
+    background-position: 50%;
+    background-repeat  : no-repeat;
+
+}
+
+.project-image3 p{
+    color       : white;
+    padding-left: 15px;
+    font-family : "PT Mono";
+}
+
+.project-image3 p:first-child{
+    font-size  : 25px;
+    font-family: 'Coolvetica Regular';
+    padding-top: 170px;
+}
+
+.project-image4{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)),
+    url('../images/lemon.png');
+    background-size   : cover;
+    width              : 300px;
+    height             : 300px;
+    background-position: 50% 50%;
+    background-repeat  : no-repeat;
+
+}
+
+.project-image4 p{
+    color       : white;
+    padding-left: 15px;
+    font-family : "PT Mono";
+}
+
+.project-image4 p:first-child{
+    font-size  : 25px;
+    font-family: 'Coolvetica Regular';
+    padding-top: 170px;
+}
+
+
+
+
+.project-tile:hover{
+    cursor            : pointer;
+    animation-name    : scale;
+    animation-duration: 0.5s;
+}
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.tiles{
+    display       : flex;
+    flex-wrap     : wrap;
+    padding-bottom: 10px;
+    margin-bottom : 20px;
+}
+
+@media only screen and (max-width: 1160px) {
+    body{
+        width: 100%;
+    }
+    header{
+        font-size: 12.5pt;
+    }
+    .name-title{
+        margin-right   : 40%;
+        justify-content: right;
+    }
+}

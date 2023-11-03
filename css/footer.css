@@ -1,0 +1,57 @@
+footer{
+    background-color: black;
+    color           : white;
+
+    display        : flex;
+    justify-content: center;
+    gap            : 150px;
+
+    padding    : 50px;
+    font-family: "PT Mono";
+}
+.socials{
+    display: flex;
+}
+footer a{
+    display        : flex;
+    text-decoration: none;
+    justify-content: center;
+    flex-direction : column;
+    padding-top    : 17.5px;
+}
+footer img{
+    width          : 50px;
+    height         : auto;
+    padding        : 25px;
+    justify-content: center;
+    margin-top     : 15%;
+}
+a{
+    color          : white;
+    text-decoration: none;
+}
+p a{
+    margin-top: -18px;
+}
+@media only screen and (max-width: 1160px) {
+    footer{
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+          /* center this div */
+        align-items  : center;
+        gap          : 30px;
+        /* margin-bottom: 50px; */
+    }
+    footer img{
+        width          : 30px;
+        height         : auto;
+        flex-direction : row;
+        padding        : 25px;
+        justify-content: center;
+        margin-top     : 15%;
+    }
+    footer div:last-child{
+        margin-top: 20px;
+    }
+}
